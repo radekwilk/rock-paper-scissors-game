@@ -24,36 +24,36 @@ while (humanWins) == False:
         continue
     # if user enter correct string (rock, paper of scissor), checking who got what and decides how wins. If computer wins, is asking to play again. If user wins game is over
     else:
-        if userImput == comp:
+        if userImput == compChoice:
             print(
-                f'Your choice is {userImput}. Computer chose {comp}. It is a draw. Try again!')
+                f'Your choice is {userImput}. Computer chose {compChoice}. It is a draw. Try again!')
             continue
-        elif userImput == 'rock' and comp == 'paper':
+        elif userImput == 'rock' and compChoice == 'paper':
             print(
-                f'Your choice is {userImput}. Computer chose {comp}. Computer wins!!!. Try again!')
+                f'Your choice is {userImput}. Computer chose {compChoice}. Computer wins!!!. Try again!')
             continue
-        elif userImput == 'rock' and comp == 'scissors':
+        elif userImput == 'rock' and compChoice == 'scissors':
             print(
-                f'Your choice is {userImput}. Computer chose {comp}. You won!!!')
+                f'Your choice is {userImput}. Computer chose {compChoice}. You won!!!')
             humanWins = True
             break
-        elif userImput == 'paper' and comp == 'rock':
+        elif userImput == 'paper' and compChoice == 'rock':
             print(
-                f'Your choice is {userImput}. Computer chose {comp}. You won!!!')
+                f'Your choice is {userImput}. Computer chose {compChoice}. You won!!!')
             humanWins = True
             break
-        elif userImput == 'paper' and comp == 'scissors':
+        elif userImput == 'paper' and compChoice == 'scissors':
             print(
-                f'Your choice is {userImput}. Computer chose {comp}. Computer wins!!!. Try again!')
+                f'Your choice is {userImput}. Computer chose {compChoice}. Computer wins!!!. Try again!')
             humanWins = False
             continue
-        elif userImput == 'scissors' and comp == 'rock':
+        elif userImput == 'scissors' and compChoice == 'rock':
             print(
-                f'Your choice is {userImput}. Computer chose {comp}. Computer wins!!!. Try again!')
+                f'Your choice is {userImput}. Computer chose {compChoice}. Computer wins!!!. Try again!')
             humanWins = False
             continue
-        elif userImput == 'scissors' and comp == 'paper':
+        elif userImput == 'scissors' and compChoice == 'paper':
             print(
-                f'Your choice is {userImput}. Computer chose {comp}. You won!!!')
+                f'Your choice is {userImput}. Computer chose {compChoice}. You won!!!')
             humanWins = True
             break
